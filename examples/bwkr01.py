@@ -49,6 +49,7 @@ import json
 import os
 import sys
 import getopt
+import configparser # https://docs.python.org/3/library/configparser.html
 import bitwarden_keyring as bwkr
 
 #
@@ -100,8 +101,14 @@ def usage ():
 #
 
 # for linux export BITWARDENCLI_APPDATA_DIR=~/.config/Bitwarden\ CLI/
+# instantiate
+
 if __name__ == '__main__':
-  parse_commandline(sys.argv[1:])
+   parse_commandline(sys.argv[1:])
+   config = configparser.ConfigParser()
+   config.read('./bwkeyring.conf') # parse existing file
+   if DEBUG: print ("topsecret:%s" % config['topsecret.server.com'])
+
   #print ("BW_SESSION=%s" % bwkr.get_session(os.environ))
 #    print ("path=%s" % bwkr.get_db_location(os.environ,"linux"))
 #    print ("ASK_BW_SESSION=%s " % bwkr.ask_for_session(False))
