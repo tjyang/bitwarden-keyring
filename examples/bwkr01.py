@@ -38,9 +38,8 @@ ERROR   = 1
 VERBOSE = False
 DEBUG   = False
 #VERSION = '%VERSION%'
-VERSION = '4.1.1'
+VERSION = '0.5'
 libdir = 'lib'
-current_unix_time = 0 
 
 #
 # ---------------------------- IMPORT  DECLARATION ---------------------------
