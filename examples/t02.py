@@ -7,9 +7,10 @@ import bitwarden_keyring as bwkr
 
 # in shell do "export BITWARDENCLI_APPDATA_DIR=~/.config/Bitwarden\ CLI/"
 
+if __name__ == '__main__':
     print ("path=%s" % bwkr.get_db_location(os.environ,"linux"))
     #print ("ASK_BW_SESSION=%s " % bwkr.ask_for_session(False))
     #print ("ASK_BW_SESSION=%s " % bwkr.ask_for_session(True))
     # print ("BW_SESSION=%s " % bwkr.get_session(os.environ))
-    print ("password=%s " % bwkr.get_password("login","va32lnagios01.mot.com"))
+    print ("password=%s " % bwkr.get_password("login","nagios01"))
 

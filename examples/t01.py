@@ -6,4 +6,6 @@ import os
 import bitwarden_keyring as bwkr
 
 # for linux export BITWARDENCLI_APPDATA_DIR=~/.config/Bitwarden\ CLI/
-bwkr.get_session("BW_SESSION")
+if __name__ == '__main__':
+  #parse_commandline(sys.argv[1:])
+  print ("BW_SESSION=%s" % bwkr.get_session(os.environ))
