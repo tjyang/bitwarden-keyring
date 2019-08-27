@@ -4,17 +4,16 @@
 #
 # REVISION HISTORY
 #       08/27/2019 T.J. Yang  init. 
-
+# DESCRIPTION
+#  1. tested on centos 7.6 using python36  
+#  2. Doing CRUD DB operations on top of bitwarden's linux cli tool.
 #
+
 # USAGE
 #  ./bwkr01.py options
 #       
 # DEBUG
 #        python3 -m pdb bwkr01.py
-#
-# DESCRIPTION
-#  1. tested on centos 7.6 using python36  
-#       
 #
 # OPTIONS
 #
