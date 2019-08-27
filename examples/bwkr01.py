@@ -37,7 +37,6 @@ SUCCESS = 0
 ERROR   = 1
 VERBOSE = False
 DEBUG   = False
-#VERSION = '%VERSION%'
 VERSION = '0.5'
 libdir = 'lib'
 
