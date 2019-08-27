@@ -71,6 +71,7 @@ def parse_commandline(argv):
    try:            # https://pymotw.com/2/getopt/
       opts, args = getopt.getopt(sys.argv[1:],':hdvV',)
    except getopt.GetoptError:
+      print ("Wrong options. ")
       usage()
       sys.exit(2)
    for opt, arg in opts:
@@ -101,13 +102,14 @@ def usage ():
 # **************************** MAIN SCRIPT ************************************
 #
 
-#    print ("path=%s" % bwkr.get_db_location(os.environ,"linux"))
-#    #print ("ASK_BW_SESSION=%s " % bwkr.ask_for_session(False))
-#    #print ("ASK_BW_SESSION=%s " % bwkr.ask_for_session(True))
-#    # print ("BW_SESSION=%s " % bwkr.get_session(os.environ))
-#    print ("password=%s " % bwkr.get_password("login","nagios01"))
-
 # for linux export BITWARDENCLI_APPDATA_DIR=~/.config/Bitwarden\ CLI/
 if __name__ == '__main__':
   parse_commandline(sys.argv[1:])
   #print ("BW_SESSION=%s" % bwkr.get_session(os.environ))
+#    print ("path=%s" % bwkr.get_db_location(os.environ,"linux"))
+#    print ("ASK_BW_SESSION=%s " % bwkr.ask_for_session(False))
+#    print ("ASK_BW_SESSION=%s " % bwkr.ask_for_session(True))
+#    print ("BW_SESSION=%s " % bwkr.get_session(os.environ))
+#    print ("password=%s " % bwkr.get_password("login","nagios01"))
+
+
