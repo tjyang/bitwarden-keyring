@@ -7,7 +7,7 @@
 
 #
 # USAGE
-#  Adding this snowt.py as a cron entry on Nagios server.
+#  ./bwkr01.py options
 #       
 # DEBUG
 #        python3 -m pdb bwkr01.py
